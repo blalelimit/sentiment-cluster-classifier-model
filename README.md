@@ -1,5 +1,5 @@
-# sentiment-classifier-model-python
-COVID-19 Sentiment Classifier Model
+# sentiment-cluster-classifier-model
+COVID-19 Sentiment Clustering & Classifier Model
 
 # Overview
 * A Twitter-based clustering and classification model able to determine the sentiment polarity (Positive, Neutral, Negative) of Tweets.
