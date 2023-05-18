@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Twitter COVID-19 Sentiment Clustering & Classification Model</title>
+    <link rel="icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Twitter COVID-19 Sentiment Clustering & Classification Model</h1>
+    <h2>by BlaleLimit</h2>
+    <form method="POST" id="forms">
+        <div class="fields">
+            <p>Sentiment</p>
+            <div class="sentiment-field">
+                <textarea name="sentiment" id="sentiment" placeholder="Enter your sentiment" cols="50" rows="5" required></textarea>
+            </div>
+            <br>
+            <p>Select a Cluster for the Classifier Model:</p>
+            <div class="cluster-field">
+                <input type="radio" id=cluster-auto name="cluster" value="auto" checked="checked" required>
+                <label for="cluster-auto">Auto</label>
+                <input type="radio" id=cluster-0 name="cluster" value="0">
+                <label for="cluster-0">0</label>
+                <input type="radio" id=cluster-1 name="cluster" value="1">
+                <label for="cluster-1">1</label>
+                <input type="radio" id=cluster-2 name="cluster" value="2">
+                <label for="cluster-2">2</label>
+                <input type="radio" id=cluster-3 name="cluster" value="3">
+                <label for="cluster-3">3</label>
+                <input type="radio" id=cluster-4 name="cluster" value="4">
+                <label for="cluster-4">4</label>
+                <input type="radio" id=cluster-5 name="cluster" value="5">
+                <label for="cluster-5">5</label>
+            </div>
+            <br>
+            <p>Classifier Model</p>
+            <div class="model-field">
+                <select name="model" id="model" required>
+                    <option value="">Select a Classifier Model</option>
+                    <option value="CNB">Complement Naive Bayes</option>
+                    <option value="SVM">Support Vector Machine</option>
+                    <option value="LR">Logistic Regression</option>
+                    <option value="RF">Random Forest</option>
+                    <option value="ENS">Combination Ensemble</option>
+                </select>
+            </div>
+        </div>
+        <br><br>
+        <input id="submit" type="submit" value="Predict">
+    </form>
+    <br>
+    <p style="text-align: center;">{{ text }}</p>
+    <p style="text-align: center;">{{ output }}</p>
+</body>
+</html>

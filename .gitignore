@@ -1,0 +1,13 @@
+.vscode/
+venv/
+__pycache__/
+build/
+datasets/
+dist/
+models/
+old/
+main.py
+main.ipynb
+*.exe
+*.spec
+*.txt
